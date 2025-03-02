@@ -32,3 +32,52 @@
 .bg-dark.py-4 {
     margin-top: 61px;
 }
+
+.text-container {
+    background-image: url(img/home/b7.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.moving-image {
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+p.lead.fw-normal {
+    color: #e7e3e3;
+}
+
+#wt {
+    text-shadow: 4px 4px 4px black;
+    color: white;
+}
+
+.tooltip {
+    cursor: pointer;
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+}
+
+.image-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -75px;
+}
+
